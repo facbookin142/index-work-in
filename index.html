@@ -2,27 +2,34 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Redirecting to WhatsApp...</title>
+  <title>Redirecting...</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script>
-    // WhatsApp number list
-    const numbers = [
-      "919119884708",
-      "919991731828",
-      "919274284341",
-      "919463567966",
-      "918101008573",
-      "917702818831",
-      "917003887186"
-    ];
+    // Is URL ko aapko Google Apps Script Web App URL se badalna hoga.
+    const url = 'YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL';
+    
+    function getRedirectLink() {
+      $.ajax({
+        url: url,
+        type: 'GET',
+        dataType: 'json',
+        success: function(response) {
+          if (response.link) {
+            window.location.replace(response.link);
+          } else {
+            console.error('Link not found.');
+          }
+        },
+        error: function(xhr, status, error) {
+          console.error('Error fetching the link:', error);
+        }
+      });
+    }
 
-    // Random number picker
-    const randomNumber = numbers[Math.floor(Math.random() * numbers.length)];
-
-    // Redirect to WhatsApp
-    window.location.href = "https://wa.me/" + randomNumber;
+    window.onload = getRedirectLink;
   </script>
 </head>
 <body>
-  <p>Redirecting to WhatsApp...</p>
+  <p>If you are not redirected automatically, <a href="#" id="manualLink">click here</a>.</p>
 </body>
 </html>
