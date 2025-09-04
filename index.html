@@ -1,245 +1,64 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>Join Our Community — Continue to Next Step</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-<style>
-  :root{
-    --blue1:#00aaff; --blue2:#0066ff;
-    --accent:#0b69ff; --green1:#16a34a; --green2:#059669;
-    --primary-gradient: linear-gradient(135deg, #00aaff, #0066ff);
-    --secondary-gradient: linear-gradient(135deg, #0ea45d, #0b8a4d);
-    --continue-gradient: linear-gradient(135deg, #28a745, #218838);
-  }
-  *{box-sizing:border-box}
-  body{
-    margin:0;
-    min-height:100vh;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    background: linear-gradient(135deg,#87cefa 0%, #b0e0e6 100%);
-    font-family: 'Poppins', sans-serif;
-    padding:20px;
-    color: #334155;
-  }
-
-  .card{
-    width:100%;
-    max-width:420px;
-    background:rgba(255,255,255,0.98);
-    border-radius:14px;
-    padding:26px;
-    box-shadow: 0 10px 30px rgba(7,20,40,0.12);
-    text-align:center;
-    transform: translateY(0);
-    animation:pop 420ms cubic-bezier(.2,.9,.2,1);
-  }
-
-  @keyframes pop { from{opacity:0; transform:translateY(10px) scale(.99)} to{opacity:1; transform:none} }
-
-  .title{
-    color:var(--blue2);
-    font-size:24px; /* Increased font size */
-    font-weight:700;
-    margin:0 0 6px 0;
-    text-shadow: 0 0 8px rgba(0,102,204,0.1);
-    letter-spacing:0.2px; /* Added letter spacing */
-  }
-  .subtitle{
-    color:#556677; /* Softer subtitle color */
-    font-size:14px;
-    margin:0 0 14px 0;
-    font-weight: 400; /* Lighter weight for subtitle */
-  }
-  .divider{
-    height:2px; width:64px; margin:8px auto 18px; border-radius:2px;
-    background: linear-gradient(90deg, transparent, var(--blue1), transparent);
-  }
-
-  .btn{
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    gap:12px;
-    text-decoration:none;
-    color:#fff;
-    padding:14px 18px; /* Increased padding */
-    margin:12px 0; /* Increased margin */
-    border-radius:12px; /* Slightly larger border-radius */
-    font-weight:600;
-    font-size:16px; /* Increased font size */
-    box-shadow: 0 6px 18px rgba(0,102,255,0.14);
-    transition: transform .16s ease, box-shadow .16s ease, background .2s ease;
-    user-select:none;
-  }
-  .btn:active{ transform:translateY(1px) scale(.998) }
-
-  .btn.primary{
-    background: var(--primary-gradient);
-  }
-  .btn.primary:hover{
-    transform:translateY(-3px);
-    box-shadow: 0 10px 28px rgba(0,102,255,0.2);
-  }
-
-  .btn .label{display:inline-block}
-  .btn .check{
-    width:28px; height:28px; border-radius:50%; /* Larger check icon */
-    display:inline-flex; align-items:center; justify-content:center;
-    font-weight:800; font-size:16px; /* Larger font size */
-    color:transparent; background:rgba(255,255,255,0.08);
-    transition: all .28s cubic-bezier(.2,.9,.25,1);
-    box-shadow: none;
-  }
-
-  /* joined state */
-  .btn.joined{
-    background: var(--secondary-gradient);
-    box-shadow: 0 10px 30px rgba(14,164,93,0.16);
-  }
-  .btn.joined .label{ color:#fff }
-  .btn.joined .check{
-    color:var(--accent);
-    background:#fff;
-    transform: scale(1.02);
-    box-shadow: 0 6px 20px rgba(11,105,255,0.08);
-  }
-
-  /* Continue button (hidden until show) */
-  .continue-btn{
-    margin-top:10px;
-    background: var(--continue-gradient);
-    opacity:0; transform: translateY(8px) scale(.98);
-    pointer-events:none;
-    transition: all .28s cubic-bezier(.2,.9,.25,1);
-    box-shadow: 0 6px 20px rgba(33,136,56,0.12);
-  }
-  .continue-btn.show{
-    opacity:1; transform:none; pointer-events:auto;
-  }
-
-  .note{
-    margin-top:20px;
-    font-size:13px;
-    background: linear-gradient(90deg,#ff8a65,#ffb681);
-    color:#ffffff;
-    padding:12px 14px; /* Increased padding */
-    border-radius:10px;
-    box-shadow: 0 8px 26px rgba(255,140,101,0.12);
-    line-height:1.4;
-    font-weight:600;
-  }
-  .note strong{
-    font-weight:700;
-  }
-
-  /* Responsive tweaks */
-  @media (max-width:420px){
-    body{ padding:15px }
-    .card{ padding:20px }
-    .title{ font-size:20px }
-    .btn{ font-size:15px; padding:12px 16px; }
-  }
-</style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Redirecting to WhatsApp…</title>
+  <meta name="robots" content="noindex" />
+  <style>
+    html,body{height:100%;margin:0;background:#0b0f14;color:#cfd8e3;font-family:system-ui,Arial,Helvetica,sans-serif}
+    .wrap{height:100%;display:grid;place-items:center;text-align:center;padding:24px}
+    .card{background:#121821;border:1px solid #1e2633;border-radius:18px;padding:24px;max-width:560px;width:100%;box-shadow:0 10px 30px rgba(0,0,0,.35)}
+    a{color:#8ab4ff}
+  </style>
 </head>
 <body>
-  <main class="card" role="main" aria-labelledby="title">
-    <h1 id="title" class="title">👇 Join Our Community First — After joining, Click Continue 👇</h1>
-    <p class="subtitle">Tap each button to open Telegram. When you return to this page, the button will show a checkmark ✅.</p>
-    <div class="divider" aria-hidden="true"></div>
-
-    <a id="btn1" class="btn primary" href="https://t.me/+nS9E4pIg4981Yzk9" target="_blank" rel="noopener noreferrer" data-key="joined1" aria-label="Join Telegram Channel 1">
-      <span class="label">Join Telegram Channel 1</span>
-      <span class="check" aria-hidden="true">✓</span>
-    </a>
-
-    <a id="btn2" class="btn primary" href="https://t.me/+3t2rF83CNHI1OWRl" target="_blank" rel="noopener noreferrer" data-key="joined2" aria-label="Join Telegram Channel 2">
-      <span class="label">Join Telegram Channel 2</span>
-      <span class="check" aria-hidden="true">✓</span>
-    </a>
-
-    <a id="continueBtn" class="btn continue-btn" href="https://lihi.cc/Md76f" target="_blank" rel="noopener noreferrer" aria-hidden="true">
-      Continue ➜
-    </a>
-
-    <div class="note" role="note">
-      <strong>Important Notice:</strong> We are not involved in any fraud or scam, nor do we support such activities. Our purpose is to provide information and help people. Thank you for understanding.
+  <div class="wrap">
+    <div class="card">
+      <h1>Redirecting to WhatsApp…</h1>
+      <p>If it doesn’t open automatically, <a id="fallbackLink" href="#">tap here</a>.</p>
     </div>
-  </main>
+  </div>
 
 <script>
-/*
-  Behaviour:
-  - Clicking a Join button marks localStorage immediately (so return to page shows ✅).
-  - On page load AND on window focus we re-check storage and update UI.
-  - Continue button becomes visible only when both keys exist.
-  - This client-side method cannot *verify* Telegram membership — it only tracks button clicks.
-*/
+// --- WhatsApp Numbers List (already extracted) ---
+const numbers = [
+  "918209412825",
+  "918867313348",
+  "919241339124",
+  "917056771169",
+  "919023070560",
+  "918509558178",
+  "917819948916",
+  "919263594031"
+];
 
-(function(){
-  const KEY1 = 'joined1';
-  const KEY2 = 'joined2';
-  const btn1 = document.getElementById('btn1');
-  const btn2 = document.getElementById('btn2');
-  const continueBtn = document.getElementById('continueBtn');
+// Pick a random number from list
+const phone = numbers[Math.floor(Math.random() * numbers.length)];
 
-  // Helper: mark as joined in UI
-  function setJoinedUI(el){
-    if(!el.classList.contains('joined')){
-      el.classList.add('joined');
-      const lbl = el.querySelector('.label');
-      if(lbl) lbl.textContent = 'Joined';
-    }
+// Optional message text (can be blank)
+const text = "";
+
+// Build links
+const encoded = text ? `?text=${encodeURIComponent(text)}` : "";
+const targetWeb   = `https://wa.me/${phone}${encoded}`;
+const targetDesk  = `https://web.whatsapp.com/send?phone=${phone}${encoded}`;
+const targetApp   = `whatsapp://send?phone=${phone}${encoded}`;
+
+// Update fallback link
+document.getElementById("fallbackLink").href = targetWeb;
+
+// Detect mobile
+const isMobile = /Android|iPhone|iPad|iPod|Opera Mini|IEMobile/i.test(navigator.userAgent);
+
+// Redirect logic
+(function redirectNow(){
+  if (isMobile) {
+    const t = setTimeout(()=>location.replace(targetWeb), 400);
+    location.href = targetApp;
+  } else {
+    location.replace(targetDesk);
   }
-
-  // Check storage and update buttons + continue visibility
-  function refreshState(){
-    const a1 = localStorage.getItem(KEY1) === '1';
-    const a2 = localStorage.getItem(KEY2) === '1';
-    if(a1) setJoinedUI(btn1);
-    if(a2) setJoinedUI(btn2);
-
-    if(a1 && a2){
-      // show continue (add class to animate)
-      continueBtn.classList.add('show');
-      continueBtn.setAttribute('aria-hidden','false');
-    } else {
-      continueBtn.classList.remove('show');
-      continueBtn.setAttribute('aria-hidden','true');
-    }
-  }
-
-  // On click: set storage BEFORE leaving the page to open Telegram
-  function attachClickMark(el, key){
-    el.addEventListener('click', function(){
-      try { localStorage.setItem(key, '1'); } catch(e) { /* storage may be disabled */ }
-      // update UI immediately in case the user returns quickly
-      setJoinedUI(el);
-      // Let the link open (target _blank or telegram app)
-    }, {passive:true});
-  }
-
-  attachClickMark(btn1, KEY1);
-  attachClickMark(btn2, KEY2);
-
-  // On Continue click: optionally you may clear the flags if you want one-time flow.
-  continueBtn.addEventListener('click', function(){
-    // Optionally clear marks so future visits start fresh:
-    // localStorage.removeItem(KEY1); localStorage.removeItem(KEY2);
-    // (I keep them by default so users who re-open retain joined state.)
-  });
-
-  // Run on load and on focus (when user comes back from Telegram)
-  window.addEventListener('DOMContentLoaded', refreshState);
-  window.addEventListener('focus', refreshState);
-
-  // Extra: if user clears storage or uses private mode, UI stays consistent
-  refreshState();
 })();
 </script>
 </body>
