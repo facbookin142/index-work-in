@@ -3,9 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Working All Coloner Apps</title>
+  <title>Top Cloner Apps</title>
 
-  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet">
 
   <style>
@@ -44,7 +43,7 @@
 
     h1 {
       text-align: center;
-      font-size: 42px;
+      font-size: clamp(32px, 5vw, 42px);
       font-weight: 900;
       background: linear-gradient(90deg, #00e676, #00c853);
       -webkit-background-clip: text;
@@ -64,14 +63,19 @@
       margin: 0 auto 40px auto;
       box-shadow: 0px 0px 10px rgba(0, 230, 118, 0.7);
     }
+    
+    .card-list {
+        list-style: none;
+        padding: 0;
+        width: 100%;
+        max-width: 850px;
+    }
 
     .card {
       background: #1b1b1b;
       border-radius: 18px;
       padding: 25px 30px;
-      margin: 20px auto;
-      max-width: 850px;
-      width: 100%;
+      margin: 20px 0;
       box-shadow: 0 6px 20px rgba(0,0,0,0.65);
       display: flex;
       align-items: center;
@@ -128,44 +132,63 @@
       background: linear-gradient(135deg, #00c853, #009624);
       box-shadow: 0 6px 16px rgba(0, 200, 83, 0.6);
     }
+    
+    @media (max-width: 600px) {
+        .card {
+            flex-direction: column;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .logo {
+            margin-bottom: 15px;
+        }
+
+        .title {
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+    }
   </style>
 </head>
 <body>
 
-  <h1>Working All Coloner Apps</h1>
+  <h1>Working All Cloner Apps</h1>
   <div class="underline"></div>
 
-  <div class="card">
-    <img src="https://www.cloneapp.net/images/logo.png" class="logo" alt="Clone App Pro">
-    <div class="details">
-      <div class="title">1. Clone App Pro</div>
-    </div>
-    <a href="https://www.cloneapp.net/mindex_en.html?fl=1" class="btn">Download</a>
-  </div>
+  <ul class="card-list">
+    <li class="card">
+      <img src="https://www.cloneapp.net/images/logo.png" class="logo" alt="Clone App Pro logo">
+      <div class="details">
+        <div class="title">1. Clone App Pro</div>
+      </div>
+      <a href="https://www.cloneapp.net/mindex_en.html?fl=1" class="btn" aria-label="Download Clone App Pro">Download</a>
+    </li>
 
-  <div class="card">
-    <img src="https://iili.io/KRxhWj2.jpg" class="logo" alt="Matrix Coloner">
-    <div class="details">
-      <div class="title">2. Matrix Coloner</div>
-    </div>
-    <a href="https://share.google/xOUHNdWvzEACzmDFR" class="btn">Download</a>
-  </div>
+    <li class="card">
+      <img src="https://iili.io/KRxhWj2.jpg" class="logo" alt="Matrix Coloner logo">
+      <div class="details">
+        <div class="title">2. Matrix Cloner</div>
+      </div>
+      <a href="https://share.google/xOUHNdWvzEACzmDFR" class="btn" aria-label="Download Matrix Cloner">Download</a>
+    </li>
 
-  <div class="card">
-    <img src="https://iili.io/KRxmUAb.md.jpg" class="logo" alt="Super Cloner Multiple">
-    <div class="details">
-      <div class="title">3. Super Cloner Multiple</div>
-    </div>
-    <a href="https://play.google.com/store/apps/details?id=com.polestar.super.clone" class="btn">Download</a>
-  </div>
+    <li class="card">
+      <img src="https://iili.io/KRxmUAb.md.jpg" class="logo" alt="Super Cloner Multiple logo">
+      <div class="details">
+        <div class="title">3. Super Cloner Multiple</div>
+      </div>
+      <a href="https://play.google.com/store/apps/details?id=com.polestar.super.clone" class="btn" aria-label="Download Super Cloner Multiple">Download</a>
+    </li>
 
-  <div class="card">
-    <img src="https://iili.io/KRzc7YN.md.jpg" class="logo" alt="Multi Parallel">
-    <div class="details">
-      <div class="title">4. Multi Parallel</div>
-    </div>
-    <a href="https://play.google.com/store/apps/details?id=multi.parallel.dualspace.cloner" class="btn">Download</a>
-  </div>
+    <li class="card">
+      <img src="https://iili.io/KRzc7YN.md.jpg" class="logo" alt="Multi Parallel logo">
+      <div class="details">
+        <div class="title">4. Multi Parallel</div>
+      </div>
+      <a href="https://play.google.com/store/apps/details?id=multi.parallel.dualspace.cloner" class="btn" aria-label="Download Multi Parallel">Download</a>
+    </li>
+  </ul>
 
 </body>
 </html>
