@@ -3,32 +3,66 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>All Working App Cloners</title>
+  <title>Working All Coloner Apps</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet">
+
   <style>
     body {
-      font-family: 'Segoe UI', Arial, sans-serif;
-      background: #0e0e0e;
+      font-family: 'Poppins', sans-serif;
       margin: 0;
       padding: 40px 20px;
       display: flex;
       flex-direction: column;
       align-items: center;
+      background: linear-gradient(-45deg, #0e0e0e, #1a1a1a, #101010, #1f1f1f);
+      background-size: 400% 400%;
+      animation: gradientBG 12s ease infinite;
+      min-height: 100vh;
+      opacity: 0;
+      transform: scale(1.1);
+      animation: fadeZoom 1.2s ease forwards, gradientBG 12s ease infinite;
+    }
+
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    @keyframes fadeZoom {
+      0% {
+        opacity: 0;
+        transform: scale(1.1);
+      }
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
     }
 
     h1 {
       text-align: center;
-      color: #ffffff;
-      font-size: 34px;
-      font-weight: 800;
+      font-size: 42px;
+      font-weight: 900;
+      background: linear-gradient(90deg, #00e676, #00c853);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
       margin-bottom: 15px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      text-shadow: 0px 0px 12px rgba(0, 230, 118, 0.7),
+                   0px 0px 24px rgba(0, 200, 83, 0.5);
     }
 
     .underline {
-      width: 80px;
+      width: 100px;
       height: 4px;
       background: linear-gradient(90deg, #00e676, #00c853);
       border-radius: 2px;
       margin: 0 auto 40px auto;
+      box-shadow: 0px 0px 10px rgba(0, 230, 118, 0.7);
     }
 
     .card {
@@ -59,6 +93,11 @@
       border: 2px solid #2f2f2f;
       background: #2a2a2a;
       flex-shrink: 0;
+      transition: box-shadow 0.3s ease;
+    }
+
+    .card:hover .logo {
+      box-shadow: 0px 0px 15px rgba(0, 230, 118, 0.6);
     }
 
     .details {
@@ -93,7 +132,7 @@
 </head>
 <body>
 
-  <h1>All Working App Cloners</h1>
+  <h1>Working All Coloner Apps</h1>
   <div class="underline"></div>
 
   <div class="card">
